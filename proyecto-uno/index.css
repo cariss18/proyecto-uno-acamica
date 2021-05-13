@@ -1,0 +1,848 @@
+body{
+    width: 320px;
+    
+    display:block;
+}
+.box1{
+    width:320px;
+    height: 44px;  
+    top:0px; 
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+}
+.box2{
+ width: 320px;
+ height: 303px;
+}
+.box3{
+    width: 320px;
+    height:1203.5px;
+}
+.box4{
+ width: 320px;
+ height: 519px;
+}
+.box5{
+    width: 320px;
+    height:525px;
+}
+.box6{
+    width: 320px;
+    height: 2400px;
+}
+.box7{
+    width: 320px;
+    height: 341px;
+}
+.box8{
+    width: 320px;
+    height:121px;
+}
+.logo1{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+.linea{
+    width:18px;
+    height: 2px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    top: 16px;
+    left: 300px;
+}
+#hamburguesa{
+    display: none;
+}
+.linea-top {
+    top: 26px;
+}
+.linea-med{
+      top: 31px;
+}
+  
+.linea-low {
+    top: 36px;
+}
+.custom-checkbox:checked + .label-hamburguesa .linea-med {
+    opacity: 0;
+}
+.custom-checkbox:checked + .label-hamburguesa .linea-top {
+    transform:  rotate(45deg);
+}
+.custom-checkbox:checked + .label-hamburguesa .linea-low {
+   transform: translateY(-10PX) rotate(-45deg);
+}
+
+input:checked ~ label{
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    top:-45px;
+    left: -18px;
+}
+ul{
+    display: none;
+    margin-top: 0px;
+    padding: 0px;
+    width: 321px;
+    height: 224px;
+    background-color: #0000EC;
+    left:-1px;
+}
+input:checked ~ul{
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: -180px;
+    background-color: #0000EC;
+    animation-name: desplegar;
+    animation-duration: 2s;
+}
+@keyframes desplegar{
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 224px;
+    }
+}
+label {
+    width: 320px;
+    height: 224px;
+    transform: translateY(40px);
+} 
+li{
+    list-style: none;
+}
+a{
+    display: block; 
+    font-size: 16px;
+    font-family:  'IBM Plex Mono', monospace;
+    color: white;
+    text-decoration: none;
+  
+}
+a:hover{
+    color: #00F3BB;
+    text-decoration: line-through;
+}
+a:active{
+    color: #060A24;
+    opacity: 56%;
+    text-decoration: line-through;
+}
+.item-uno{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+}
+.item-dos{
+    position: absolute;
+    top: 68px;
+    left: 16px;
+}
+.item-tres{
+    position: absolute;
+    top: 120px;
+    left: 16px;
+}
+.item-cuatro{
+    position: absolute;
+    top: 172px;
+    left: 16px;
+}
+.box1 a{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+h1{
+    font-family: 'IBM Plex Sans';
+    color: black;
+}
+.H{
+    display: flex;
+    width:82px;
+    height: 42px;
+    font-size: 36px;
+    font-weight: normal;
+    position: absolute;
+    top: 33px;
+    left: 40px;
+}
+.W{
+    display: flex;
+    width:82px;
+    height: 42px;
+    font-size: 36px;
+    font-weight: normal;
+    position: absolute;
+    top: 33px;
+    left: 140px;
+    text-decoration-line: line-through;
+}
+.P{
+    display: flex;
+    width: 250px;
+    height: 42px;
+    font-size: 36px;
+    font-weight: normal;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+}
+p{
+    width: 288px;
+    height: 66px;
+    position: relative;
+    top: 139px;
+    left:16px;
+    font-size: 14px;
+    color: #060A24; 
+    font-family: 'IBM Plex Mono', monospace;
+    line-height: 22px;
+    letter-spacing: 0;
+}
+button{
+    width: 288px;
+    height: 48px;
+    background-color: #00F3BB;
+    position: relative;
+    top: 157px;
+    left: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+}
+button:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+}
+.poligono{
+    box-sizing: border-box;
+    position: relative;
+    left:-2px;
+}
+text{
+    font-size: 36px;
+}
+svg{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    z-index: 0;
+}
+.desktop-svg {
+    visibility:hidden
+  }
+.podcast1{
+    width: 298px;
+    height: 225px;
+    position: absolute;
+    z-index: 1;
+    top: 424px;
+    left: 16px;
+}
+.podcast-1{
+    border: none;
+}
+.podcast2{
+    width: 298px;
+    height: 225px;
+    position: absolute;
+    z-index: 1;
+    top: 670px;
+    left: 16px;
+}
+.podcast-2{
+    border: none;
+}
+.podcast3{
+    width: 298px;
+    height: 225px;
+    position: absolute;
+    z-index: 1;
+    top: 915px;
+    left: 16px;
+}
+.podcast-3{
+    border: none;
+}
+.podcast4{
+    width: 298px;
+    height: 225px;
+    position: absolute;
+    z-index: 1;
+    top: 1160px;
+    left: 16px;
+}
+.podcast-4{
+    border: none;
+}
+.phone{
+    position: relative;
+    top: -90px;
+    left:-20px;
+    width:360px;
+    height: 519px;
+}
+.titulo-dos{
+    font-size: 36px;
+    position: absolute;
+    left: 26px;
+    top: 1950px;
+    font-family: 'IBM Plex Sans';
+    color: #060A24;
+    line-height:42px;
+}
+.titulo-dos-venimos{
+    font-size: 36px;
+    position: absolute;
+    left: 26px;
+    top: 1995px;
+    font-family: 'IBM Plex Sans';
+    color: #060A24;
+    line-height:42px;
+}
+.texto-dos{
+    font-size: 14px;
+    font-family: 'IBM Plex Mono';
+    line-height: 22px;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 2050px;
+    left: 25px;
+    color: #060A24;
+    width: 288px;
+    height: 254px;
+    padding-top: 8px;
+}
+.titulo-tres{
+  font-family: 'IBM Plex Sans';
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  position: relative;
+  top: 300px;
+  left: 16px;
+}
+.grace{
+    width: 320px;
+    height: 243px;
+    position: absolute;
+    top: 2470px;
+    left: 8px;
+}
+.katie{
+    width: 320px;
+    height: 243px;
+    position: absolute;
+    top: 2713px;
+    left: 8px;
+}
+.margaret{
+    width: 320px;
+    height: 243px;
+    position: absolute;
+    top: 2956px;
+    left: 8px;
+}
+.computer{
+    width: 320px;
+    height: 243px;
+    position: absolute;
+    top: 3199px;
+    left: 8px;
+}
+.computer-operators{
+    width: 320px;
+    height: 243px;
+    position: absolute;
+    top: 3442px;
+    left: 8px;
+}
+.susan{
+    width: 320px;
+    height: 243px;
+    position: absolute;
+    top: 3685px;
+    left: 8px; 
+}
+.titulo-cuatro{
+  font-family: 'IBM Plex Sans';
+  font-size: 36px;
+  color: #060A24;
+  letter-spacing: 0;
+  line-height: 42px;
+  position: relative;
+  top: 1380px;
+  left: 16px;
+  width: 288px;
+  height: 84px;
+}
+.icono1{
+    width: 104px;
+    height: 104px;
+    position: relative;
+    top: 1438px;
+    left: 108px;
+}
+.titulo-cinco{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 24px;
+  color: #060A24;
+  line-height: 32px;
+  letter-spacing: 0;
+  position: relative;
+  top: 1440px;
+  left:16px;
+  text-align: center; 
+  width: 288px;
+  height: 32px;
+}
+.icono2{
+    width: 104px;
+    height: 104px;
+    position: relative;
+    top: 1460px;
+    left: 108px;
+}
+.titulo-seis{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    color: #060A24;
+    line-height: 32px;
+    letter-spacing: 0;
+    position: relative;
+    top: 1460px;
+    left:16px;
+    text-align: center; 
+    width: 288px;
+    height: 32px;
+}
+.icono3{
+    width: 104px;
+    height: 104px;
+    position: relative;
+    top: 1525px;
+    left: 108px;
+}
+.titulo-siete{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    color: #060A24;
+    line-height: 32px;
+    letter-spacing: 0;
+    position: relative;
+    top: 1520px;
+    left:16px;
+    text-align: center; 
+    width: 288px;
+    height: 32px;
+}
+.icono4{
+    width: 104px;
+    height: 104px;
+    position: relative;
+    top: 1560px;
+    left: 108px;
+}
+.titulo-ocho{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    color: #060A24;
+    line-height: 32px;
+    letter-spacing: 0;
+    position: relative;
+    top: 1560px;
+    left:16px;
+    text-align: center; 
+    width: 288px;
+    height: 32px;
+}
+.novedades{
+    position: relative;
+    z-index: 1;
+    width: 288px;
+    height: 126px;
+    top: 64px;
+}
+.titulo-nueve{
+  font-family: 'IBM Plex Sans';
+  font-size: 36px;
+  color: white;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 42px;
+  width: 288;
+  height: 126px;
+}
+.escucha{
+    position: relative;
+    top:90px;
+}
+.final{
+    width: 250px;
+    height:22px;
+}
+h3{
+    font-size: 14px;
+   letter-spacing: 0px;
+   line-height: 22px;
+   color: #060A24;
+   font-family: 'IBM Plex Mono';
+   position: relative;
+   top: 10px;
+   left: 40px;
+}
+.justificado{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 30px;
+    top: 30px;
+    left: 10px;
+    width: 300px;
+}
+.spotify{
+    position: relative;
+    width: 16px;
+    height: 28px;
+    
+}
+.instagram{
+    position: relative;
+    width: 16px;
+    height: 28px;
+}
+.twitter{
+    position: relative;
+    width: 16px;
+    height: 28px;
+}
+.facebook{
+    position: relative;
+    width: 16px;
+    height: 28px;
+}
+.telegram{
+    position: relative;
+    width: 16px;
+    height: 28px;
+}
+.desktop-svg-dos{
+    visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+   
+    .logo1{
+        width: 36px;
+        height: 36px;
+        left:100px;
+        top: 22px;
+        z-index: 1;
+    }
+   .menu-hamburguesa{
+       display: none;
+    }
+    .desktop-menu{
+       display: flex;
+       flex-direction: row-reverse;
+       align-items: center;
+       width: 1440px;
+       height: 80px;
+       background-color: white;
+    }
+    .item-uno{
+        top: 26px;
+        left: 858px;
+    }
+    .item-dos{
+        top: 26px;
+        left: 993px;
+    }
+    .item-tres{
+        top: 26px;
+        left: 1118px;
+    }
+    .item-cuatro{
+        top: 26px;
+        left: 1272px;
+    }
+    a{
+        color: #060A24; 
+        padding-right: 48px;
+        font-family:  'IBM Plex Mono', monospace; 
+
+    }
+    a:hover{
+        color: #00F3BB;
+        text-decoration: line-through;
+    }
+    a:active{
+        color: #060A24;
+        opacity: 56%;
+        text-decoration: line-through;
+    }
+    .box2{
+        height: 379px;
+    }
+    .H{
+        width: 152px;
+        height: 84px;
+        top: 120px;
+        left: 200px;
+        font-size: 64px;
+        color: #060A24;
+    }
+    .W{
+        width: 179px;
+        height: 84px;
+        top: 120px;
+        left: 352px;
+        font-size: 64px;
+        color: #060A24;
+    }
+    .P{
+        width: 400px;
+        height: 84px;
+        top: 120px;
+        left: 531px;
+        font-size: 64px;
+        color: #060A24;
+    }
+    p{
+        width: 628px;
+        height: 48px;
+        top: 230px;
+        left:200px;
+        font-size: 16px;
+        color: #060A24;
+    }
+    button{
+        width: 226px;
+        height: 56px;
+        top: 252px;
+        left: 200px;
+    }
+    .box3{
+        width: 1440px;
+        height: 1050;
+    }
+    .mobile-svg{
+        visibility: hidden;
+    }
+    .desktop-svg{
+        visibility: visible;
+    }
+    text{
+        font-size: 48px;
+    }
+    .podcast1{
+        width: 586px;
+        height: 232px;
+        top: 623px;
+        left: 100px;
+    }
+    .podcast-1{
+        width: 586px;
+        height: 232px;
+        border: none;
+    }
+    .podcast2{
+        width: 586px;
+        height: 232px;
+        top: 623px;
+        left: 756px;
+    }
+    .podcast-2{
+        width: 586px;
+        height: 232px;
+        border: none;
+    }
+    .podcast3{
+        width: 586px;
+        height: 232px;
+        top: 927px;
+        left: 100px;
+    }
+    .podcast-3{
+        width: 586px;
+        height: 232px;
+        border: none;
+    }
+    .podcast4{
+        width: 586px;
+        height: 232px;
+        top: 927px;
+        left: 756px;
+    }
+    .podcast-4{
+        width: 586px;
+        height: 232px;
+        border: none;
+    }
+    .phone{
+        width: 457.6px;
+        height: 660px;
+        top: -330px;
+        left: 200px;
+    }
+    .titulo-dos{
+        height: 62px;
+        top: 1512px;
+        left: 720px;
+        font-size: 48px;  
+    }
+    .titulo-dos-venimos{
+        height: 62px;
+        top: 1512px;
+        left: 940px;
+        font-size: 48px;  
+    }
+    .texto-dos{
+        width: 468px;
+        height: 204px;
+        top: 1598px;
+        left: 720px;
+        font-size: 16px;
+    }
+    .titulo-tres{
+        width: 481px;
+        height: 62px;
+        top: -150px;
+        left: 200px;
+        font-size: 48px;
+    }
+    .grace{
+        width: 480px;
+        height: 364px;
+        top: 2145px;
+    }
+    .katie{
+        width: 480px;
+        height: 364px;
+        top: 2145px;
+        left: 480px;
+    }
+    .margaret{
+        width: 480px;
+        height: 364px;
+        top: 2145px;
+        left: 960px;
+    }
+    .computer{
+        width: 480px;
+        height: 364px;
+        top: 2509px;
+    }
+    .computer-operators{
+        width: 480px;
+        height: 364px;
+        top: 2509px;
+        left: 480px;
+    }
+    .susan{
+        width: 480px;
+        height: 364px;
+        top: 2509px;
+        left: 960px; 
+    }
+    .titulo-cuatro{
+        width: 586px;
+        height: 62px;
+        top: 230px;
+        left:200px;
+        font-size: 48px;
+    }
+    .icono1{
+        width: 104px;
+        height: 104px;
+        top: 250px;
+        left: 278px;
+    }
+    .icono2{
+        width: 104px;
+        height: 104px;
+        top: 70px;
+        left: 538px;
+    }
+    .icono3{
+        width: 104px;
+        height: 104px;
+        top: -100px;
+        left: 798px;
+    }  
+    .icono4{
+        width: 104px;
+        height: 104px;
+        top: -270px;
+        left: 1058px;
+    }
+    .titulo-cinco{
+        width: 220px;
+        height: 32px;
+        top: 250px;
+        left: 220px;
+        font-size: 24px;
+    }
+    .titulo-seis{
+        width: 220px;
+        height: 32px;
+        top: 80px;
+        left: 480px;
+        font-size: 24px;
+    }
+    .titulo-siete{
+        width: 220px;
+        height: 32px;
+        top: -90px;
+        left: 740px;
+        font-size: 24px;
+    }
+    .titulo-ocho{
+        width: 220px;
+        height: 32px;
+        top: -260px;
+        left: 1000px;
+        font-size: 24px;  
+    }
+    .desktop-svg-dos{
+        visibility: visible;
+        top: 3299px;
+        z-index: 0;
+    }
+    .titulo-nueve{
+      width: 692px;
+      height: 62px;
+      top: -1750px;
+      left: 374px;
+      position: relative;
+      z-index: 1;
+      color: white;
+    }
+    .escucha{
+        width: 345px;
+        left: 56px;
+        top: -1700px;
+        left: 547px;
+    }
+    h3{
+        width: 269px;
+        height: 28px;
+        top: -1630px;
+        left: 100px;
+    }
+    .justificado{
+        top:-1650px;
+        left: 1000px;
+    }
+}

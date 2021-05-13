@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proyecto1</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../style.css/style.css">
+    <link rel="stylesheet" href="../imagenes.png/">
+  </head>
+  <body>
+    <header>
+      <div class="box1">
+        <img  class="logo1" src="../imagenes.png/logo.svg" alt="logo">
+        <nav>
+          <ul class="desktop-menu">
+            <li class="item-cuatro"><a href="#topicos">TOPICOS</a></li>
+            <li class="item-tres"><a href="#entrevistas">ENTREVISTAS</a></li>
+            <li class="item-dos"><a href="#nosotros">NOSOTROS</a></li>
+            <li class="item-uno"><a href="#episodios">EPISODIOS</a></li>
+          </ul>
+        </nav>
+        <nav class="menu-hamburguesa">
+          <input id="hamburguesa" type="checkbox" class="custom-checkbox"/>
+          <label for="hamburguesa" class="label-hamburguesa">
+            <div class="container-hamburguesa">
+              <div class="linea linea-top"></div>
+              <div class="linea linea-med"></div>
+              <div class="linea linea-low"></div>
+            </div>
+          </label>
+          <ul>
+            <li class="item-uno"><a href="#episodios">EPISODIOS</a></li>
+            <li class="item-dos"><a href="#nosotros">NOSOTROS</a></li>
+            <li class="item-tres"><a href="#entrevistas">ENTREVISTAS</a></li>
+            <li class="item-cuatro"><a href="#topicos">TÓPICOS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="box2">
+        <h1 class="H">Hello</h1>
+        <h1 class="W">world</h1>
+        <h1 class="P">pale blue dot.</h1>
+        <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días</p>
+        <button type="button"> CONOCÉ MÁS</button>
+      </div>
+      <div class="box3">
+        <svg class="desktop-svg" width="100%" height="1042.6px">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#0000FF"/> 
+              <stop offset="100%" style="stop-color:#0000A3"/>
+            </linearGradient> 
+          </defs>
+          <polygon class="poligono" 
+            points="0 150,1440 0, 1440 900, 0 1050 "
+            style="fill: url(#gradient)"
+          />
+          <text id="episodios" x=200 y=186 fill="white" font-family="'IBM Plex Sans'">Episodios</text>
+        </svg>
+        <svg class="mobile-svg"  width="320px" height="1203.5px">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#0000FF"/> 
+              <stop offset="100%" style="stop-color:#0000A3"/>
+            </linearGradient> 
+          </defs>
+          <polygon class="poligono" 
+          points="0 30,320 0,320 1173.5, 0 1203.5 "
+          style="fill: url(#gradient)"
+          />
+          <text id="episodios" x=16 y=84 fill="white" font-family="'IBM Plex Sans'">Episodios</text>
+        </svg>
+        <div class="podcast1">
+          <iframe id="podcast-uno" class="podcast-1"
+            title="podcast-uno"
+            src="https://open.spotify.com/embed-podcast/episode/2gGnQrl5Cn89e0xJYc6qwN" 
+            width="298"
+            height="235" 
+            >
+          </iframe>
+        </div>
+        <div class="podcast2">
+          <iframe id="podcast-dos" class="podcast-2"
+            title="podcast-dos"
+            src="https://open.spotify.com/embed-podcast/episode/3JwZWF09As0E8eOKJjFi4p"
+            width="298" 
+            height="235">
+          </iframe>
+        </div>
+        <div class="podcast3">
+          <iframe id="podcast-tres" class="podcast-3"
+           title="podcast-tres"
+           src="https://open.spotify.com/embed-podcast/episode/3JwZWF09As0E8eOKJjFi4p"
+           width="298" 
+           height="232">
+          </iframe>
+        </div>
+        <div class="podcast4">
+          <iframe id="podcast-cuatro" class="podcast-4"
+           title="podcast-cuatro"
+           src="https://open.spotify.com/embed-podcast/episode/4ArimIEYlRyYX0zEbc4FOl" 
+           width="298" 
+           height="232">
+          </iframe>
+        </div>
+      </div>
+      <div class="box4">
+        <div>
+          <img src="../imagenes.png/phone.png" class="phone" alt="telefono">
+        </div>
+        <h1 id="nosotros" class="titulo-dos">De dónde </h1>
+        <h1 class="titulo-dos-venimos">venimos</h1>
+        <p class="texto-dos">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
+          Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+      </div>
+      <div class="box5">
+        <h1 id="entrevistas" class="titulo-tres">Invitadas/os estelares</h1>
+      </div>
+      <div class="box6">
+        <div>
+          <img src="../imagenes.png/grace-hopper.png" alt="grace" class="grace">
+        </div>
+        <div>
+          <img src="../imagenes.png/Katie-Bouman.png" alt="Katie-Bouman" class="katie">
+        </div>
+        <div>
+          <img src="../imagenes.png/Margaret_Hamilton.png" alt="margaret-Hamilton" class="margaret">
+        </div>
+        <div>
+          <img src="../imagenes.png/An E.R.A.Univac 1103 computer in the 1950s.png" alt="computer" class="computer">
+        </div>
+        <div>
+          <img src="../imagenes.png/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="computer-operators" class="computer-operators">
+        </div>
+        <div>
+          <img src="../imagenes.png/susan-kare.png" alt="susan" class="susan">
+        </div>
+        <h1 id="topicos" class="titulo-cuatro">Algunos de nuestros temas</h1>
+        <div>
+          <img src="../imagenes.png/icon1.svg" alt="icono1" class="icono1">
+        </div>
+        <h1 class="titulo-cinco">Trabajo remoto</h1>
+        <div>
+          <img src="../imagenes.png/icon2.svg" alt="icono2" class="icono2">
+        </div>
+        <h1 class="titulo-seis">Repensando la programación</h1>
+        <div>
+          <img src="../imagenes.png/icon3.svg" alt="icono3" class="icono3">
+        </div>
+        <h1 class="titulo-siete">Bases del código</h1>
+        <div>
+          <img src="../imagenes.png/icon4.svg" alt="icono4" class="icono4">
+        </div>
+        <h1 class="titulo-ocho">Seguridad informática</h1>
+        <svg class="desktop-svg-dos" width="1440px" height="518px">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#0000A3"/> 
+              <stop offset="100%" style="stop-color:#0000FF"/>
+            </linearGradient> 
+          </defs>
+          <polygon class="poligono" 
+          points="0 100,1440 0,1440 518, 0 518"
+          style="fill: url(#gradient)"
+          />
+        </svg>
+      </div>
+      <div class="box7">
+        <svg class="mobile-svg" width="320px" height="341">
+          <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#0000FF"/> 
+              <stop offset="100%" style="stop-color:#0000A3"/>
+            </linearGradient> 
+          </defs>
+          <polygon class="poligono" 
+          points="0 30,320 0,320 1173.5, 0 1203.5 "
+          style="fill: url(#gradient)"
+          />
+        </svg>
+        <div class="novedades">
+          <h1 class="titulo-nueve">¿Querés las últimas novedades?</h1>
+        </div>
+        <button class="escucha" type="button">ESCUCHÁ LOS EPISODIOS</button>
+      </div>
+    </main>
+    <footer>
+      <div class="box8">
+        <div class="final">
+          <h3>© 2019— Hello blue pale dot</h3></div>
+        <div class="justificado">
+         <a href="https://www.spotify.com/ar/">
+          <img class="spotify" src="../imagenes.png/spotify-brands.svg"  alt="spotify"></a>
+         <a href="https://www.instagram.com/">
+          <img class="instagram" src="../imagenes.png/instagram-brands.svg" alt="instagram"></a>
+         <a href="https://twitter.com/login">
+          <img class="twitter" src="../imagenes.png/twitter-brands.svg" alt="twitter"></a>
+         <a href="https://www.facebook.com/">
+          <img class="facebook" src="../imagenes.png/facebook-brands.svg" alt="facebook"></a>
+         <a href="https://desktop.telegram.org/">
+          <img class="telegram" src="../imagenes.png/telegram-brands.svg" alt="telegram"></a>
+        </div>
+      </div> 
+    </footer>
+  </body>
